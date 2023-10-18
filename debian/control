@@ -3,20 +3,21 @@ Section: javascript
 Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Roshan Nalawade <dn.roshan2@gmail.com>
-Build-Depends:
- debhelper (>= 9)
- , dh-buildinfo
- , nodejs
-Standards-Version: 4.1.0
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , uglifyjs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-imurmurhash
+Vcs-Git: https://salsa.debian.org/js-team/node-imurmurhash.git
 Homepage: https://github.com/jensyt/imurmurhash-js
-Vcs-Git: https://anonscm.debian.org/git/pkg-javascript/node-imurmurhash.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-javascript/node-imurmurhash.git
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
 
 Package: node-imurmurhash
 Architecture: all
-Depends:
- ${misc:Depends}
- , nodejs
+Depends: ${misc:Depends}
+Provides: ${nodejs:Provides}
+Multi-Arch: foreign
 Description: incremental implementation of MurmurHash3 hashing algorithm
  This module is an incremental implementation of the MurmurHash3 (32-bit)
  hashing algorithm for JavaScript based on Gary Court's implementation with

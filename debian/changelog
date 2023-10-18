@@ -1,9 +1,40 @@
-node-imurmurhash (0.1.4-1.1) unstable; urgency=medium
+node-imurmurhash (0.1.4+dfsg+~0.1.1-2) unstable; urgency=medium
 
-  * Non maintainer upload by the Reproducible Builds team.
-  * No source change upload to rebuild on buildd with .buildinfo files.
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + node-imurmurhash: Add Multi-Arch: foreign.
 
- -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 00:36:57 +0100
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Mon, 21 Nov 2022 14:58:49 +0000
+
+node-imurmurhash (0.1.4+dfsg+~0.1.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update Vcs-* headers from URL redirect.
+  * Use canonical URL in Vcs-Git.
+  * Update standards version to 4.1.1, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper from old 12 to 13.
+  * Declare compliance with policy 4.6.0
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Modernize debian/watch
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+  * Drop dependency to nodejs
+  * Use dh-sequence-nodejs auto install
+  * Exclude minified file from import and rebuild it
+  * Embed typescript definitions
+  * New upstream version 0.1.4+dfsg+~0.1.1
+
+ -- Yadd <yadd@debian.org>  Thu, 25 Nov 2021 21:45:09 +0100
 
 node-imurmurhash (0.1.4-1) unstable; urgency=low
 
