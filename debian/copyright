@@ -1,7 +1,9 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: imurmurhash
 Upstream-Contact: https://github.com/jensyt/imurmurhash-js/issues
 Source: https://github.com/jensyt/imurmurhash-js
+ https://registry.npmjs.org/@types/imurmurhash
+Files-Excluded: *.min.js
 
 Files: *
 Copyright: 2013 Gary Court, Jens Taylor <jensyt@gmail.com> (https://github.com/homebrewing)
@@ -9,6 +11,10 @@ License: Expat
 
 Files: debian/*
 Copyright: 2017 Roshan Nalawade <dn.roshan2@gmail.com>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
@@ -31,4 +37,3 @@ License: Expat
  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  SOFTWARE.
-
